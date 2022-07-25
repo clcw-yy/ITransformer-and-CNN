@@ -25,7 +25,7 @@ from load_domain import loadDomain
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("./data/source/features2.csv")
+    df = pd.read_csv("./data/source/features.csv")
     X = df.drop(['label'], axis=1)
     Y = df['label']
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, train_size=0.75, test_size=0.25, shuffle=True,
